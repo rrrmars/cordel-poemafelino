@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap');
+
+@font-face {
+    font-family:'Typewriter';
+    src: url('fontes/Kingthings\ Trypewriter\ 2.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family:'Liberation';
+    src: url('fontes/liberation-fonts-ttf-1.06.0.20100721/LiberationMono-Regular.ttf') format('truetype');
+    
+}
+
+
+:root {
+    --fonte-typewriter: 'Typewriter';
+    --fonte-padrao: 'Liberation';
+    --fonte-destaque: 'Oswald';
+
+    --cor01: #D9B29C;
+    --cor02: #BF9C88;
+    --cor03: #D96A6A;
+    --cor-subtitulo: #A6121F;
+    
+
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+
+header {
+    min-height: 250px;
+    background-color: var(--cor02);
+    padding: 15px;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 90px;
+    font-family: var(--fonte-typewriter);
+    font-size: 5vw;
+}
+
+header > h2 {
+    font-family: var(--fonte-destaque);
+    font-size: 3vw;
+    color: var(--cor-subtitulo);
+    text-transform: uppercase;
+    padding-top: 45px;
+    padding-bottom: 30px;
+}
+
+header p {
+    padding-bottom: 15px;
+}
+
+header a, footer a {
+    font-family: var(--fonte-padrao);
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.6vw;
+}
+
+header a:hover {
+    font-weight: lighter;
+    color: rgb(122, 122, 122);
+}
+
+section {
+    padding: 20px;
+    line-height: 1.8em;
+    font-size: 2vw;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    padding-left: 40px;
+}
+
+
+section.normal {
+    background-color: white;
+}
+
+section.imagem {
+    background-color: var(--cor01);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.411);
+}
+
+#cat1 {
+    background-image: url('imagens/gatinha-11.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+#cat2 {
+    background-image: url('imagens/robin.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+#cat3 {
+    background-image: url('imagens/_MG_4479.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+}
+section.imagem > p {
+    display: inline-block;
+    color: rgb(246, 239, 230);
+    background-color:  rgba(0, 0, 0, 0.356);
+    padding: 20px;
+    text-shadow: 1px 1px 0px rgba(109, 109, 109, 0.752);
+    border-radius: 5%;
+}
+
+p {
+    font-family: var(--fonte-padrao);
+    font-weight: 500;
+}
+
+footer {
+    background-color: var(--cor02);
+    text-align: center;
+    padding: 10px;
+}
+
+footer > p {
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+    color: #A6121F;
+    font-size: 1vw;
+}
+
+footer a:hover {
+    font-weight: 100;
+    color: rgb(129, 129, 129);
+}
