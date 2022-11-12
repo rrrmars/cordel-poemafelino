@@ -114,12 +114,13 @@ section.imagem {
 }
 
 #cat3 {
-    background-image: url('imagens/gatinhanha.jpg');
+    background-image: url('imagens/gatinha-4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
 }
+
 section.imagem > p {
     display: inline-block;
     color: rgb(246, 239, 230);
