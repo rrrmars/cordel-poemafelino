@@ -114,11 +114,11 @@ section.imagem {
 }
 
 #cat3 {
-    background-image: url('imagens/_MG_4479.JPG');
+    background-image: url('imagens/gatinhanha.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: top center;
+    background-position: center center;
 }
 section.imagem > p {
     display: inline-block;
